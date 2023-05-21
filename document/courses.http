@@ -1,0 +1,14 @@
+### GET to ' /courses/list '
+GET http://localhost:3000/courses/list
+Content-Type: application/json
+Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywidXVpZCI6IjcyNmYyZDI5LWUyMDEtNDQ0NC1hNmYxLTE2ZjIzMjQwMjU5OSIsIm5hbWUiOiJhbGFuIiwiZW1haWwiOiJyYW1hbGhvQGdtYWlsLmNvbSIsInJvbGUiOlt7ImlkIjoyLCJ1dWlkIjoiNmZhOThiNTktNDg1MS00MWYyLTlhYWItNDVhYWY5MTExZmM1IiwidGl0bGUiOiJQUkVNSVVNX1JPTEUiLCJjcmVhdGVkX2F0IjoiMjAyMy0wNS0yMVQwMDo0Mzo1MS44MjBaIn0seyJpZCI6MywidXVpZCI6IjA2ZmIyYzgwLWZhNWItNDUyOS1iNjdkLTkwZjkxZTIzMzY5YiIsInRpdGxlIjoiQ09VUlNFX1ZCQSIsImNyZWF0ZWRfYXQiOiIyMDIzLTA1LTIxVDAwOjQ4OjUzLjUyNloifSx7ImlkIjo0LCJ1dWlkIjoiMGI0MjgyZjQtNDg0Yi00ZDM0LWI2NDctM2U5NWM3NjUwM2YzIiwidGl0bGUiOiJFWENFTF9WQkEiLCJjcmVhdGVkX2F0IjoiMjAyMy0wNS0yMVQwMTowMToyMC45MjhaIn1dLCJpYXQiOjE2ODQ2ODcxNTYsImV4cCI6MTY4NDY4NzI3Nn0.NDgtYChJ54eKB6TanzzZgX0sYIp17vL_C_nI3HWvdw4"
+
+
+### POST to ' /courses/new '
+POST http://localhost:3000/courses/new
+Content-Type: application/json
+
+{
+  "title": "DESAFIO_NODEJS",
+  "price": 220
+}

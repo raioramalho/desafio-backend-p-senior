@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.CustomError = exports.ResponseError = void 0;
+class ResponseError extends Error {
+    constructor(error) {
+        super(error.message);
+        this.name = error.name;
+        this.code = error.code;
+        this.message = error.message;
+    }
+}
+exports.ResponseError = ResponseError;
+function CustomError(message, code) {
+    return {
+        error: true,
+        message,
+        code,
+    };
+}
+exports.CustomError = CustomError;
+//# sourceMappingURL=response.error.js.map

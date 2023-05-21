@@ -1,0 +1,24 @@
+### POST to '/auth/login'
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email":"ramalho@gmail.com",
+  "password":"1q2w3e"
+}
+
+### POST to '/auth/new'
+POST http://localhost:3000/auth/new
+Content-Type: application/json
+
+{
+  "name": "lucas",
+  "email":"lucas@gmail.com",
+  "password":"1q2w3e"
+}
+
+### GET to '/auth/list'
+GET http://localhost:3000/auth/list
+Content-Type: application/json
+
+

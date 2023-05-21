@@ -1,0 +1,60 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./courses.sqlite"
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  uuid     String @unique
+  email    String @unique
+  password String
+  name     String
+
+  role  Roles[]
+  sales Sales[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Sales {
+  id          Int    @id @default(autoincrement())
+  uuid        String @unique
+  service_key String @unique
+  user        User   @relation(fields: [buyerEmail], references: [email])
+  buyerEmail  String
+
+  course    Courses @relation(fields: [productId], references: [uuid])
+  productId String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Courses {
+  id    Int    @id @default(autoincrement())
+  uuid  String @unique
+  title String @unique
+
+  price Int
+
+  Sales Sales[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}
+
+model Roles {
+  id    Int    @id @default(autoincrement())
+  uuid  String @unique
+  title String @unique
+
+  users User[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+}

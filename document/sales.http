@@ -1,0 +1,14 @@
+### POST to ' /sales/new '
+POST http://localhost:3000/sales/new
+Content-Type: application/json
+
+{
+  "service_key": "428347289341",
+  "buyerEmail": "lucas@gmail.com",
+  "productId": "7666a688-55e9-4da6-a01f-2b1cc998e5b6"
+}
+
+
+### GET to ' /sales/list '
+GET http://localhost:3000/sales/list
+Content-Type: application/json
