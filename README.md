@@ -1,6 +1,4 @@
-# Desafio para vaga de backend
-
-Nós esperamos que você desenvolva três serviços distintos, contendo APIs Rest ou Graphql, utilizando NodeJs + Typescript +  MongoDB e qualquer outra tecnologia complementar que façam o seguinte:
+# Backend com NestJS + Apache Kafka + postgres
 
 
 1. Sistema para vendas de infoprodutos:
